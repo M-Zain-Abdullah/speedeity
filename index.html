@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Speed Tracker</h1>
+        <button id="connectBtn">Connect to ESP32</button>
+        
+        <!-- Small box for speed and status -->
+        <div class="speed-box">
+            <p id="speed">Speed: -- km/h</p>
+            <p id="status" class="normal">Status: Waiting for data...</p>
+        </div>
+
+        <h2>Speed Log</h2>
+        <ul id="speed-log"></ul>
+        <button id="exportBtn">Export Data as CSV</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
